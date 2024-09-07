@@ -1,0 +1,111 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvAulaGrupoNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome da Aula"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Descrição da Aula -->
+        <TextView
+            android:id="@+id/tvAulaGrupoDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição detalhada da aula"
+            android:layout_marginTop="16dp" />
+
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTxtAulaGrupo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Em grupo - " />
+
+            <!-- Descrição da Aula -->
+            <TextView
+                android:id="@+id/tvTipoAula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTxtAulaGrupoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data da aula: " />
+
+            <!-- Data da Aula -->
+            <TextView
+                android:id="@+id/tvAulaGrupoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/09/2024" />
+        </LinearLayout>
+
+        <!-- Espaçamento -->
+        <Space
+            android:layout_width="300dp"
+            android:layout_height="0dp" />
+
+        <!-- Botões de ação -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Botão Inscrever-se -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAulaGrupoIncreverSe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Inscrever-se" />
+
+            <!-- Espaço entre os botões -->
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <!-- Botão Cancelar -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAulaGrupoCancelar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="@color/md_theme_secondary"
+                android:text="Cancelar" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,43 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.professor.MeusCursosProfessorFragment">
+
+    <!-- Conteúdo principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meus Cursos"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- RecyclerView para exibir cursos -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMeusCursos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Floating Action Button para adicionar curso -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/baseline_add_24"
+        app:backgroundTint="@color/md_theme_primary"
+        android:layout_gravity="center|bottom" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

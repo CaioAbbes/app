@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/book"
+        android:title="Início" />
+    <item
+        android:id="@+id/nav_meus_cursos"
+        android:icon="@drawable/aula_presencial"
+        android:title="Meus Cursos" />
+    <item
+        android:id="@+id/nav_minhas_aulas"
+        android:icon="@drawable/schedule"
+        android:title="Minhas Aulas" />
+    <item
+        android:id="@+id/nav_meu_perfil"
+        android:icon="@drawable/student"
+        android:title="Meu Perfil" />
+</menu>

@@ -1,0 +1,154 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:background="@color/md_theme_surface_mediumContrast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título do modal -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTituloTipoAgendamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agendando aula particular"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Texto para seleção de dia -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione o dia"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Calendário para selecionar dia -->
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:background="@color/md_theme_surfaceContainerLow"
+            android:id="@+id/calendarViewAulaEmGrupo"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Seletor para Aula Online ou Remota -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione o tipo de aula:"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- RadioGroup com opções de Aula Online e Aula Remota -->
+        <RadioGroup
+            android:id="@+id/radioGroupTipoAula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <!-- Opção Aula Online -->
+            <RadioButton
+                android:id="@+id/radioIsAulaOnline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aula Online"
+                android:checked="true" />
+
+            <!-- Espaçamento -->
+            <Space
+                android:layout_width="32dp"
+                android:layout_height="wrap_content" />
+
+            <!-- Opção Aula Remota -->
+            <RadioButton
+                android:id="@+id/radioIsAulaPresencial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aula Presencial" />
+        </RadioGroup>
+
+        <!-- Campo de texto para o título da aula com TextInputLayout -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Título">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etTituloAulaGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo de texto para a descrição da aula com TextInputLayout -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Descrição">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDescricaoAulaGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo de texto para o link da aula online com TextInputLayout -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Link Aula Online (opcional)">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLinkAulaGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Espaçamento -->
+        <Space
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="0dp" />
+
+        <!-- Botões Cadastrar e Cancelar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCadastrar"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar"
+                android:textColor="@android:color/white"
+                android:enabled="false" />
+
+            <Space
+                android:layout_width="32dp"
+                android:layout_height="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancelar"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@color/md_theme_secondary" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Edtech</string>
+    <string name="title_menu_cursos">Cursos</string>
+    <string name="title_menu_agenda">Agenda</string>
+    <string name="title_menu_perfil">Perfil</string>
+    <string name="cadastro_radio_aluno">Aluno</string>
+    <string name="cadastro_radio_professor">Professor</string>
+    <string name="voltar">Voltar</string>
+
+    <string-array name="especialidades_options">
+        <item>Selecione sua especialidade:</item>
+        <item>Análise de Dados</item>
+        <item>Automação Industrial</item>
+        <item>Ciência de Dados</item>
+        <item>Desenvolvimento de Jogos</item>
+        <item>Design Gráfico</item>
+        <item>Direito Empresarial</item>
+        <item>Engenharia Civil</item>
+        <item>Engenharia de Software</item>
+        <item>Engenharia Elétrica</item>
+        <item>Engenharia Mecânica</item>
+        <item>Finanças e Contabilidade</item>
+        <item>Gestão de Projetos</item>
+        <item>Inglês</item>
+        <item>Inteligência Artificial</item>
+        <item>Marketing Digital</item>
+        <item>Mecatrônica</item>
+        <item>Negócios e Empreendedorismo</item>
+        <item>Programação</item>
+        <item>Recursos Humanos</item>
+        <item>Redes de Computadores</item>
+        <item>Robótica</item>
+        <item>Segurança da Informação</item>
+        <item>Tecnologia da Informação</item>
+    </string-array>
+
+
+</resources>
